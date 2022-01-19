@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated EMFModel -->
+      <package
+            uri="foo.bar.emf"
+            class="Neo4JEMFProblemReproduction.EMF.modelPackage"
+            genModel="model/EMFModel.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated EMFModel -->
+      <package
+            uri="foo.bar.emf.artefacts"
+            class="Neo4JEMFProblemReproduction.EMF.artefacts.ArtefactsPackage"
+            genModel="model/EMFModel.genmodel"/>
+   </extension>
+
+</plugin>
