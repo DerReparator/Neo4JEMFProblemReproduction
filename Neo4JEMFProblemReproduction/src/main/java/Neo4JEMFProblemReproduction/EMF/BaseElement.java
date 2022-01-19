@@ -24,6 +24,7 @@ import org.eclipse.emf.ecore.EObject;
 public interface BaseElement extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Uuid</b></em>' attribute.
+	 * The default value is <code>"notSet"</code>.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Uuid</em>' attribute isn't clear,
@@ -33,7 +34,7 @@ public interface BaseElement extends EObject {
 	 * @return the value of the '<em>Uuid</em>' attribute.
 	 * @see #setUuid(String)
 	 * @see Neo4JEMFProblemReproduction.EMF.modelPackage#getBaseElement_Uuid()
-	 * @model required="true"
+	 * @model default="notSet" required="true"
 	 * @generated
 	 */
 	String getUuid();
