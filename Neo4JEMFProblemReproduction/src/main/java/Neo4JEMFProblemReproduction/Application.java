@@ -47,6 +47,8 @@ public class Application {
 		thing.setProjectName("FOO BAR Project");
 		
 		session.save(thing);
+		
+		System.out.println("Stored EMF element: " + thing.toString());
 	}
 	
 	private static void storeNonEMFElement(SessionFactory factory) {
@@ -56,6 +58,8 @@ public class Application {
 		thing.name = "A red thing" + UUID.randomUUID().toString();
 		
 		session.save(thing);
+		
+		System.out.println("Stored non-EMF element: " + thing.toString());
 	}
 	
 }
